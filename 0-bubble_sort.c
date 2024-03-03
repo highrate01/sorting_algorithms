@@ -5,7 +5,7 @@
  * and swap numbers tat are out of place(it sorts)
  *
  * @array: array to be sorted
- * @n: it reps the total number of datas in the array
+ * @size: it reps the total number of datas in the array
  * Return: nothing
  */
 void bubble_sort(int *array, size_t size)
@@ -16,9 +16,9 @@ void bubble_sort(int *array, size_t size)
 	{
 		for (j = 0; j < size - i - 1; j++)
 		{
-			if (array[j] > array[j+1])
+			if (array[j] > array[j + 1])
 			{
-				swap_int(&array[j], &array[j+1]);
+				swap_int(&array[j], &array[j + 1]);
 				print_array(array, size);
 			}
 		}
@@ -36,7 +36,7 @@ void bubble_sort(int *array, size_t size)
 void swap_int(int *a, int *b)
 {
 	int blank;
-	
+
 	int *d = &blank;
 
 	*d = *a;
