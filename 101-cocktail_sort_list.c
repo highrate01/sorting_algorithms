@@ -32,10 +32,8 @@ void f_swap_nodes(listint_t **list, listint_t **tail, listint_t **current)
  * @tail: pointer the end of the nodes
  * @current: pointer to help iterate through
  * the list of nodes
- *
- * @Return: nothing
+ * Return: void
  */
-
 void swap_nodes(listint_t **list, listint_t **tail, listint_t **current)
 {
 	listint_t *tmp = (*current)->prev;
@@ -68,6 +66,7 @@ void cocktail_sort_list(listint_t **list)
 	listint_t *current, *tmp;
 
 	bool moved = false;
+
 	if (list == NULL || *list == NULL || (*list)->next == NULL)
 		return;
 	for (tmp = *list; tmp->next != NULL;)
