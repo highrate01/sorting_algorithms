@@ -22,7 +22,8 @@ void swap_int(int *a, int *b)
  *
  * @array: pointer to array of element
  * @size: the size of the array
- * @pivot: The pivoted element
+ * @left: The starting index of the elements
+ * @right: The ending index
  * Return: 1 on success, 0 therwise
  */
 
@@ -55,6 +56,8 @@ int partition(int *array, size_t size, int left, int right)
  *
  * @array: The array of the elements to sort
  * @size: The size of the array
+ * @lower: The smallest numbers
+ * @upper: The highest numbers
  * Return: void
  */
 void quicksort_recur(int *array, size_t size, int lower, int upper)
