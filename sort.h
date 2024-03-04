@@ -23,4 +23,9 @@ void print_array(const int *array, size_t size);
 void bubble_sort(int *array, size_t size);
 void insertion_sort_list(listint_t **list);
 void selection_sort(int *array, size_t size);
+void quick_sort(int *array, size_t size);
+void quicksort_recur(int *array, size_t size, int lower, int upper);
+int partition(int *array, size_t size, int left, int right);
+void quick_sort(int *array, size_t size);
+
 #endif /*MAIN_H*/

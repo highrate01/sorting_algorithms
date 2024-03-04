@@ -4,7 +4,7 @@
  * insertion_sort_list - This function sorts list of data by building
  * the final sorted array one at a time
  *
- * @list: pointer to a pointer to the hed of the linked list
+ * @list: pointer to a pointer to the head of the linked list
  * Return: nothing
  */
 
