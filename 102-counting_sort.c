@@ -9,7 +9,7 @@
 int max_value(int *array, int size)
 {
 	int max, count;
-	
+
 	for (max = array[0], count = 1; count < size; count++)
 	{
 		if (array[count] > max)
