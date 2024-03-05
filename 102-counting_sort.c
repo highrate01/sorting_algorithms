@@ -49,15 +49,15 @@ void counting_sort(int *array, size_t size)
 		count[i] = 0;
 
 	for (i = 0; i < j; i++)
-		count[array[i]] += 1;
+		count[array[i]] = count[array[i]] + 1;
 
 	for (i = 1; i < (max + 1); i++)
-		count[i] += count[i - 1];
+		count[i] = count[i] + count[i - 1];
 	print_array(count, max + 1);
 	for (i = 0; i < j; i++)
 	{
 		new_array[count[array[i]] - 1] = array[i];
-		count[array[i]] -= 1;
+		count[array[i]] = count[array[i]] - 1;
 	}
 	for (i = 0; i < j; i++)
 		array[i] = new_array[i];
