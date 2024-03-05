@@ -34,7 +34,7 @@ void f_swap_nodes(listint_t **list, listint_t **tail, listint_t **current)
  * the list of nodes
  * Return: void
  */
-void swap_nodes(listint_t **list, listint_t **tail, listint_t **current)
+void swap_node(listint_t **list, listint_t **tail, listint_t **current)
 {
 	listint_t *tmp = (*current)->prev;
 
@@ -89,7 +89,7 @@ void cocktail_sort_list(listint_t **list)
 		{
 			if (current->n < current->prev->n)
 			{
-				swap_nodes(list, &tmp, &current);
+				swap_node(list, &tmp, &current);
 				print_list((const listint_t *)*list);
 				moved = false;
 			}
