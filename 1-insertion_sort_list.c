@@ -7,7 +7,7 @@
  *
  * Description: It implements the insertion sort to sort the
  *		allgoritm
- * Return: nothing
+ *Return: nothing
  */
 
 void insertion_sort_list(listint_t **list)
