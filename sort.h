@@ -4,6 +4,7 @@
 #include <stddef.h>
 #include <stdbool.h>
 #include <stdlib.h>
+#include <stdio.h>
 /**
  * struct listint_s - Doubly linked list node
  *
@@ -35,4 +36,8 @@ void cocktail_sort_list(listint_t **list);
 void f_swap_nodes(listint_t **list, listint_t **tail, listint_t **current);
 int max_value(int *array, int size);
 void counting_sort(int *array, size_t size);
+void merge_sub(int *div, int *buff, size_t front, size_t mid, size_t back);
+void merge_recur(int *div, int *buff, size_t front, size_t back);
+void merge_sort(int *array, size_t size);
+
 #endif /*MAIN_H*/
