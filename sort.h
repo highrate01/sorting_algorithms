@@ -44,5 +44,6 @@ void heap_sort(int *array, size_t size);
 void count_sort(int *array, size_t size, int digit, int *buff);
 int highest(int *array, int size);
 void radix_sort(int *array, size_t size);
+void swap_nodes(listint_t **head, listint_t **node1, listint_t *node2);
 
 #endif /*MAIN_H*/
