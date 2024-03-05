@@ -37,8 +37,7 @@ void swap_int(int *a, int *b)
 {
 	int blank;
 
-	int *d = &blank;
-	*d = *a;
+	blank = *a;
 	*a = *b;
-	*b = *d;
+	*b = blank;
 }
