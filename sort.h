@@ -39,5 +39,7 @@ void counting_sort(int *array, size_t size);
 void merge_sub(int *div, int *buff, size_t front, size_t mid, size_t back);
 void merge_recur(int *div, int *buff, size_t front, size_t back);
 void merge_sort(int *array, size_t size);
+void bin_heap(int *array, size_t size, size_t index, size_t tail);
+void heap_sort(int *array, size_t size);
 
 #endif /*MAIN_H*/
