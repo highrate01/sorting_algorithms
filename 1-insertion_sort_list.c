@@ -5,6 +5,7 @@
  * the final sorted array one at a time
  *
  * @list: pointer to a pointer to the head of the linked list
+ * Description: It sorts array in ascending order
  * Return: nothing
  */
 
