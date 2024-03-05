@@ -14,7 +14,7 @@ void merge_sub(int *div, int *buff, size_t front, size_t mid, size_t back)
 {
 	size_t k = 0, i, j;
 
-	printf("merging...\n[left]: ");
+	printf("Merging...\n[left]: ");
 	print_array(div + front, mid - front);
 	printf("[right]: ");
 	print_array(div + mid, back - mid);
