@@ -2,10 +2,13 @@
 
 /**
  * bubble_sort - This function compares the consequtive of data
- * and swap numbers tat are out of place(it sorts)
+ * and swap numbers that are out of place(it sorts)
  *
  * @array: array to be sorted
  * @size: it reps the total number of datas in the array
+ *
+ * Description: This swaps two integers that area out of
+ * place by comparing them
  * Return: nothing
  */
 void bubble_sort(int *array, size_t size)
