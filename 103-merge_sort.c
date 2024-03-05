@@ -43,7 +43,7 @@ void merge_recur(int *div, int *buff, size_t front, size_t back)
 {
 	size_t mid;
 
-	if (back - front > 1)
+	if (back > front + 1)
 	{
 		mid = front + (back - front) / 2;
 		merge_recur(div, buff, front, mid);
