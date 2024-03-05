@@ -41,5 +41,8 @@ void merge_recur(int *div, int *buff, size_t front, size_t back);
 void merge_sort(int *array, size_t size);
 void bin_heap(int *array, size_t size, size_t index, size_t tail);
 void heap_sort(int *array, size_t size);
+void count_sort(int *array, size_t size, int digit, int *buff);
+int highest(int *array, int size);
+void radix_sort(int *array, size_t size);
 
 #endif /*MAIN_H*/
