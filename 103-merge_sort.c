@@ -49,7 +49,6 @@ void merge_recur(int *div, int *buff, size_t front, size_t back)
 		merge_recur(div, buff, front, mid);
 		merge_recur(div, buff, mid, back);
 		merge_sub(div, buff, front, mid, back);
-		merge_sub(div, buff, front, mid, back);
 	}
 }
 
