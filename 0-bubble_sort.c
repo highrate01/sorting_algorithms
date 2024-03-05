@@ -6,7 +6,6 @@
  *
  * @array: array to be sorted
  * @size: it reps the total number of datas in the array
- *
  * Description: This swaps two integers that area out of
  * place by comparing them
  * Return: nothing
@@ -38,9 +37,9 @@ void bubble_sort(int *array, size_t size)
  */
 void swap_int(int *a, int *b)
 {
-	int blank;
+	int temp;
 
-	blank = *a;
+	temp = *a;
 	*a = *b;
 	*b = blank;
 }
