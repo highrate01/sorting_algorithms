@@ -49,13 +49,11 @@ void count_sort(int *array, size_t size, int digit, int *buff)
 
 /**
  * radix_sort - This function sorts array of integer in ascending order
- * 		its imitates the radix sort algorithm
- *
+ *		its imitates the radix sort algorithm
  * @array: The array of integers to be sorted
  * @size: The size of the array
  * Description: This function uses the counting sort algorithm to count
- * 		and swap the significant digit whic is the highest in the array
- *
+ *		and swap the significant digit whic is the highest in the array
  * Return: nothing
  */
 void radix_sort(int *array, size_t size)
