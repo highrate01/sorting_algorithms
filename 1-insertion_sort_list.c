@@ -9,7 +9,6 @@
  *		allgoritm
  *Return: nothing
  */
-
 void insertion_sort_list(listint_t **list)
 {
 	listint_t *current, *ptr, *temp;
