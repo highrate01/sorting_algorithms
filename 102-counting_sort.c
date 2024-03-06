@@ -11,8 +11,6 @@ int max_value(int *array, int size)
 	int max = array[0];
 	int count;
 
-	if (array == NULL)
-		return -1;
 	for (count = 1; count < size; count++)
 	{
 		if (array[count] > max)
