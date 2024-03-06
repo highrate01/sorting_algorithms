@@ -25,7 +25,7 @@ void f_swap_nodes(listint_t **list, listint_t **tail, listint_t **current)
 	*current = tmp;
 }
 /**
- * swap_nodes - This function swaps nodes in
+ * swap_node - This function swaps nodes in
  * doubly linked list
  *
  * @list: pointer to head of the nodes
