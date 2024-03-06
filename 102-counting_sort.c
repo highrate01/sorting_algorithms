@@ -33,6 +33,8 @@ void counting_sort(int *array, size_t size)
 	int *new_array;
 
 	max = max_value(array, size);
+	if (max == -1)
+		return;
 	if (array == NULL || size < 2)
 		return;
 	new_array = malloc(sizeof(int) * size);
@@ -40,7 +42,10 @@ void counting_sort(int *array, size_t size)
 		return;
 	count = malloc(sizeof(int) * (max + 1));
 	if (count == NULL)
+	{
+		free(new_array);
 		return;
+	}
 	j = (int)size;
 	for (i = 0; i < (max + 1); i++)
 		count[i] = 0;
