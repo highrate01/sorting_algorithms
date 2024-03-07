@@ -5,6 +5,9 @@
 #include <stdbool.h>
 #include <stdlib.h>
 #include <stdio.h>
+
+#define UP 0
+#define DOWN 1
 /**
  * struct listint_s - Doubly linked list node
  *
@@ -46,5 +49,10 @@ void count_sort(int *array, size_t size, int digit, int *buff);
 int highest(int *array, int size);
 void radix_sort(int *array, size_t size);
 void swap_nodes(listint_t **head, listint_t **node1, listint_t *node2);
+void bitonic_merge(int *array, size_t size, size_t start,
+                size_t sequence, char direc);
+void bitonic_sequence(int *array, size_t size, size_t start, size_t sequence,
+                char direc);
+void bitonic_sort(int *array, size_t size);
 
 #endif /*MAIN_H*/
